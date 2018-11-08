@@ -1,4 +1,4 @@
-DELIMITER $$
+/DELIMITER $$
 
 DROP PROCEDURE IF EXISTS mum_user_dev $$
 CREATE DEFINER=`root`@`localhost`
@@ -9,7 +9,7 @@ LANGUAGE SQL
 NOT DETERMINISTIC
 MODIFIES SQL DATA
 SQL SECURITY DEFINER
-COMMENT 'Create a TS DB user with default privileges and expiration time'
+COMMENT 'Create a DB user with default privileges and expiration time'
 
 mum_dev_sp:BEGIN
 DECLARE mum_login_type CHAR(3);

@@ -1,5 +1,5 @@
 /*
-    create user with basic grants and TS defaults and expiration time.
+    create user with basic grants and defaults and expiration time.
 */
 
 DELIMITER $$
@@ -16,7 +16,7 @@ LANGUAGE SQL
 NOT DETERMINISTIC
 MODIFIES SQL DATA
 SQL SECURITY DEFINER
-COMMENT 'Create a TS DB user with default privileges and expiration time'
+COMMENT 'Create a DB user with default privileges and expiration time'
 
 mum_add_sp:BEGIN
 
